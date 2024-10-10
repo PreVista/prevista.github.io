@@ -6,8 +6,14 @@ import icon from "astro-icon"
 
 // https://astro.build/config
 export default defineConfig({
-  compressHTML: true,
-  integrations: [mdx(), icon(), tailwind({
-    applyBaseStyles: false,
-  }), compress()],
+    site: 'https://prevista.github.io',
+    compressHTML: true,
+    integrations: [
+        mdx(), 
+        icon(), 
+        tailwind({
+            applyBaseStyles: false,
+        }), 
+        compress()
+    ],
 })
