@@ -11,16 +11,16 @@ import ContentMedia from '../components/ContentMedia.astro'
     <section class="mx-auto my-40 max-w-6xl">
         <h2 class="mb-10 text-6xl">What we do</h2>
         <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
-            <Feature icon="mdi:tailwind" title="Digital transformation">
+            <Feature icon="mdi:cloud-braces" title="Digital transformation">
                 We create tech that helps businesses adapt, transform, and thrive in the digital age, like custom software, cloud-native applications, data warehouses, analytics tools, and more.
             </Feature>
-            <Feature icon="mdi:wheelchair-accessibility" title="Automation software">
+            <Feature icon="mdi:cogs" title="Automation software">
                 We build custom solutions that let you eliminate repetitive manual tasks, minimise human error, reduce costs, improve efficiency and productivity, ease scaling up, and more.
             </Feature>
-            <Feature icon="mdi:looks" title="Product development">
+            <Feature icon="mdi:devices" title="Product development">
                 We plan, design, develop, and maintain your MVPs, MLPs, SaaS, web, mobile, and desktop apps and advise on the tech stack and core features you need to dominate your niche.
             </Feature>
-            <Feature icon="mdi:eslint" title="Short-term IT Support">
+            <Feature icon="mdi:hexagon-multiple-outline" title="Short-term IT Support">
                 We boost your in-house crew with a single fill-in software engineer or managed teams so you can carry out essential projects, meet your deadlines, or close a skill gap.
             </Feature>
         </div>
@@ -38,7 +38,7 @@ import ContentMedia from '../components/ContentMedia.astro'
     <section class="mx-auto my-40 max-w-6xl">
         <h2 class="mb-3 text-5xl">Technologies backed for productivity, scalability and security.</h2>
         <ContentMedia imgSrc="/accessible-components.webp">
-            <h2>Accessible Components</h2>
+            <h4>Java, Scala and Kotlin.</h4>
             <p class="text-2xl">
               This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
               lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
@@ -47,12 +47,28 @@ import ContentMedia from '../components/ContentMedia.astro'
             </p>
           </ContentMedia>
           <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-            <h2>WCAG 2.1 AA Compliant</h2>
+            <h4>Jakarta EE, Quarkus and Spring.</h4>
             <p class="text-2xl">
               Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
               navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
               reaching WCAG AA compliance.
             </p>
-          </ContentMedia>        
+          </ContentMedia>
+          <ContentMedia imgSrc="/wcag-compliant.webp">
+            <h4>MongoDb, ElasticSearch and MySQL</h4>
+            <p class="text-2xl">
+              Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
+              navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
+              reaching WCAG AA compliance.
+            </p>
+          </ContentMedia>
+          <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+            <h4>Docker and AWS.</h4>
+            <p class="text-2xl">
+              Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
+              navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
+              reaching WCAG AA compliance.
+            </p>
+          </ContentMedia>     
     </section>
 </DefaultLayout>
