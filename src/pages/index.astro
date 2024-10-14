@@ -4,71 +4,62 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+
+
+import javaScalaKotlinHeader from '../assets/img/java-kotlin-groovy-scala-comp.png';
 ---
 
-<DefaultLayout title="Home">
+<DefaultLayout title="PreVista > Inovative software solutions for your needs.">
     <Hero />
+
     <section class="mx-auto my-40 max-w-6xl">
         <h2 class="mb-10 text-6xl">What we do</h2>
         <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
             <Feature icon="mdi:cloud-braces" title="Digital transformation">
-                We create tech that helps businesses adapt, transform, and thrive in the digital age, like custom software, cloud-native applications, data warehouses, analytics tools, and more.
+                We create tech that helps businesses adapt, transform, and thrive in the digital age, 
+                like custom software, cloud-native applications, data warehouses, analytics tools, and more.
             </Feature>
             <Feature icon="mdi:cogs" title="Automation software">
-                We build custom solutions that let you eliminate repetitive manual tasks, minimise human error, reduce costs, improve efficiency and productivity, ease scaling up, and more.
+                We build custom solutions that let you eliminate repetitive manual tasks, 
+                minimise human error, reduce costs, improve efficiency and productivity, ease scaling up, and more.
             </Feature>
             <Feature icon="mdi:devices" title="Product development">
-                We plan, design, develop, and maintain your MVPs, MLPs, SaaS, web, mobile, and desktop apps and advise on the tech stack and core features you need to dominate your niche.
+                We plan, design, develop, and maintain your MVPs, MLPs, SaaS, web, mobile, 
+                and desktop apps and advise on the tech stack and core features you need to dominate your niche.
             </Feature>
             <Feature icon="mdi:hexagon-multiple-outline" title="Short-term IT Support">
-                We boost your in-house crew with a single fill-in software engineer or managed teams so you can carry out essential projects, meet your deadlines, or close a skill gap.
+                We boost your in-house crew with a single fill-in software engineer or managed teams 
+                so you can carry out essential projects, meet your deadlines, or close a skill gap.
             </Feature>
         </div>
     </section>
 
     <section class="mx-auto mb-32 mt-64 max-w-5xl">
         <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-            <Counter count="1.2M+" title="Users worldwide" />
+            <Counter count="1M+" title="Users worldwide" />
             <Counter count="10+" title="Years of experience" />
-            <Counter count="100+" title="Business partners" />
-            <Counter count="10M+" title="Lines of code" />
+            <Counter count="10+" title="Business partners" />
+            <Counter count="1M+" title="Lines of code" />
         </div>
     </section>
 
     <section class="mx-auto my-40 max-w-6xl">
         <h2 class="mb-3 text-5xl">Technologies backed for productivity, scalability and security.</h2>
-        <ContentMedia imgSrc="/accessible-components.webp">
+        <ContentMedia imgSrc={javaScalaKotlinHeader}>
             <h4>Java, Scala and Kotlin.</h4>
-            <p class="text-2xl">
-              This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-              lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-                >separate package</a
-              >. They'll get you up and running in building an accessible solution for your visitors.
-            </p>
-          </ContentMedia>
-          <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+            <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </ContentMedia>
+       <!-- <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
             <h4>Jakarta EE, Quarkus and Spring.</h4>
-            <p class="text-2xl">
-              Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-              navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-              reaching WCAG AA compliance.
-            </p>
-          </ContentMedia>
-          <ContentMedia imgSrc="/wcag-compliant.webp">
+            <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </ContentMedia>
+        <ContentMedia imgSrc="/wcag-compliant.webp">
             <h4>MongoDb, ElasticSearch and MySQL</h4>
-            <p class="text-2xl">
-              Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-              navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-              reaching WCAG AA compliance.
-            </p>
-          </ContentMedia>
-          <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-            <h4>Docker and AWS.</h4>
-            <p class="text-2xl">
-              Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-              navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-              reaching WCAG AA compliance.
-            </p>
-          </ContentMedia>     
+            <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </ContentMedia>
+        <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+            <h4>SUSE Linux</h4>
+            <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </ContentMedia>      -->
     </section>
 </DefaultLayout>
