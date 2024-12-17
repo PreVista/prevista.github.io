@@ -7,14 +7,13 @@ import Footer from "../components/Footer.astro";
 
 const {
     title = "PreVista",
-    description = "A starter project with accessibility features using Astro static site builder. Contains accessible landmarks, skip links, a dark mode color scheme, better focus outline and keyboard menu navigation.",
-    url,
+    description = "",
     image = "/social-preview-image.png",
-    author = "Mark Teekman",
+    author = "PreVista team",
 } = Astro.props;
 ---
 
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,10 +24,8 @@ const {
 
         <SiteMeta
             title={title}
-            description={description.substring(0, 100)}
-            url={Astro.site
-                ? `${Astro.site}/${title.toLowerCase().replaceAll(" ", "-")}`
-                : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(" ", "-")}`}
+            description={description}
+            url={Astro.site}
             image={image}
             author={author}
         />
