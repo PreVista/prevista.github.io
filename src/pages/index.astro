@@ -4,8 +4,6 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
-
-import javaScalaKotlinHeader from '../assets/img/java-kotlin-groovy-scala-comp.png';
 ---
 
 <DefaultLayout title="PreVista > Inovative software solutions for your needs.">
@@ -43,12 +41,31 @@ import javaScalaKotlinHeader from '../assets/img/java-kotlin-groovy-scala-comp.p
     </section>
 
     <section class="mx-auto my-40 max-w-6xl">
-        <h2 class="mb-3 text-5xl">Technologies backed for productivity, scalability and security.</h2>
-        <ContentMedia imgSrc={javaScalaKotlinHeader}>
+        <h2 class="mb-10 text-5xl">Technologies backed for productivity, scalability and security.</h2>
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <Feature icon="java" title="Java">
+                We create tech that helps businesses adapt, transform, and thrive in the digital age, 
+                like custom software, cloud-native applications, data warehouses, analytics tools, and more.
+            </Feature>
+            <Feature icon="scala" title="Scala">
+                We build custom solutions that let you eliminate repetitive manual tasks, 
+                minimise human error, reduce costs, improve efficiency and productivity, ease scaling up, and more.
+            </Feature>
+            <Feature icon="kotlin" title="Kotlin">
+                We plan, design, develop, and maintain your MVPs, MLPs, SaaS, web, mobile, 
+                and desktop apps and advise on the tech stack and core features you need to dominate your niche.
+            </Feature>
+            <Feature icon="docker" title="Docker">
+                We plan, design, develop, and maintain your MVPs, MLPs, SaaS, web, mobile, 
+                and desktop apps and advise on the tech stack and core features you need to dominate your niche.
+            </Feature>
+        </div>
+       
+       <!-- <ContentMedia imgSrc={javaScalaKotlinHeader}>
             <h4>Java, Scala and Kotlin.</h4>
             <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </ContentMedia>
-       <!-- <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+        <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
             <h4>Jakarta EE, Quarkus and Spring.</h4>
             <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </ContentMedia>

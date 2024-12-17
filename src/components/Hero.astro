@@ -1,18 +1,16 @@
 ---
-import { Image } from 'astro:assets';
-
-import heroImg from '../assets/img/hero.png';
+import HeroImg from "./HeroImg.astro"
 ---
-
+<!-- n <Image src={heroImg} alt="hero" class="mx-auto flex-none max-w-sm md:max-w-lg" /> -->
 <section class="my-20">
     <div class="container">
-        <div class="flex flex-col-reverse md:flex-row">
+        <div class="flex flex-col-reverse md:flex-row gap-3">
             <div class="flex-1">
                 <h1 class="text-center text-4xl md:text-left lg:text-6xl">
                     We provide digital transformation, custom software, and an expert crew that redefine your expectations.
                 </h1>
             </div>
-            <Image src={heroImg} alt="hero" class="mx-auto flex-none max-w-sm md:max-w-lg" />
+            <HeroImg />
         </div>
     </div>
 </section>
