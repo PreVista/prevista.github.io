@@ -2,13 +2,15 @@
 import ResponsiveToggle from './ResponsiveToggle.astro'
 import { DarkMode } from 'accessible-astro-components'
 import { Image } from 'astro:assets'
-import logo from '../assets/img/logo.png'
+//import logo from '../assets/img/logo.png'
+
+import logoImg from '../assets/logo.svg'
 ---
 
 <div id="main-navigation" class="is-desktop py-8">
   <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
-      <Image src={logo} alt="PreVista logo" width="200" height="100" />
+      <Image src={logoImg} alt="PreVista logo" class="w-40 h-40" />
     </a>
     <div class="wrapper">
       <nav class="desktop-menu" aria-label="Main navigation desktop">

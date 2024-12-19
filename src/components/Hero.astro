@@ -1,7 +1,10 @@
 ---
 import HeroImg from "./HeroImg.astro"
+
+import { Image } from 'astro:assets';
+
+import iconImg from '../assets/icon.svg'
 ---
-<!-- n <Image src={heroImg} alt="hero" class="mx-auto flex-none max-w-sm md:max-w-lg" /> -->
 <section class="my-20">
     <div class="container">
         <div class="flex flex-col-reverse md:flex-row gap-3">
@@ -10,7 +13,8 @@ import HeroImg from "./HeroImg.astro"
                     We provide digital transformation, custom software, and an expert crew that redefine your expectations.
                 </h1>
             </div>
-            <HeroImg />
+            <Image src={iconImg} alt="icon" class="mx-auto flex-none max-w-sm md:max-w-lg" />
+            <!-- <HeroImg />  -->
         </div>
     </div>
 </section>

@@ -4,7 +4,6 @@ import { ClientRouter } from 'astro:transitions';
 import "@astrojs/tailwind/base.css";
 import "../assets/scss/globals.scss";
 
-
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
@@ -94,23 +93,6 @@ const url = Astro.site;
 
                 footer {
                     flex-shrink: 0;
-                }
-            }
-
-            pre {
-                padding: 1rem;
-                border-radius: 0.35rem;
-                border: 2px solid var(--action-color);
-            }
-
-            body .pagination a {
-                &:hover,
-                &:focus-visible {
-                    background-color: var(--action-color-state);
-
-                    svg path {
-                        stroke: white;
-                    }
                 }
             }
         </style>
